@@ -1,0 +1,47 @@
+# OS files
+Thumbs.db
+.DS_Store
+
+# Editors and local tooling
+.idea/
+.vscode/
+.trae/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.venv/
+venv/
+env/
+
+# Node / frontend
+node_modules/
+dist/
+build/
+.vite/
+playwright-report/
+test-results/
+coverage/
+
+# Environment and secrets
+.env
+.env.*
+*.local
+
+# Logs and temp files
+*.log
+*.tmp
+tmp/
+temp/
+
+.github
+.specify
+
