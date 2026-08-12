@@ -18,11 +18,11 @@
 
 **Purpose**: Create the project skeleton and toolchain required by all later work.
 
-- [ ] T001 Create backend project scaffold and package configuration in `backend/pyproject.toml`
-- [ ] T002 [P] Create frontend project scaffold and package configuration in `frontend/package.json`
-- [ ] T003 [P] Configure backend test tooling and pytest defaults in `backend/pytest.ini`
-- [ ] T004 [P] Configure frontend build and smoke-test tooling in `frontend/vite.config.ts` and `frontend/playwright.config.ts`
-- [ ] T005 Create backend and frontend entry scaffolds in `backend/src/edu_cs_core/__init__.py` and `frontend/src/main.tsx`
+- [X] T001 Create backend project scaffold and package configuration in `backend/pyproject.toml`
+- [X] T002 [P] Create frontend project scaffold and package configuration in `frontend/package.json`
+- [X] T003 [P] Configure backend test tooling and pytest defaults in `backend/pytest.ini`
+- [X] T004 [P] Configure frontend build and smoke-test tooling in `frontend/vite.config.ts` and `frontend/playwright.config.ts`
+- [X] T005 Create backend and frontend entry scaffolds in `backend/src/edu_cs_core/__init__.py` and `frontend/src/main.tsx`
 
 ---
 
@@ -32,15 +32,15 @@
 
 **⚠️ CRITICAL**: No user story work should begin until this phase is complete.
 
-- [ ] T006 Implement SQLite engine, session factory, and repository base in `backend/src/edu_cs_core/storage/database.py`
-- [ ] T007 [P] Implement shared domain enums and value objects for signals, attribution, and scopes in `backend/src/edu_cs_core/domain/enums.py`
-- [ ] T008 [P] Implement baseline configuration schema and loader in `backend/src/edu_cs_core/config/schema.py` and `backend/src/edu_cs_core/config/loader.py`
-- [ ] T009 [P] Implement protocol registry and normalization entrypoints in `backend/src/edu_cs_core/protocol/registry.py`
-- [ ] T010 [P] Implement scope resolution core with role-template and grant-aware visibility rules in `backend/src/edu_cs_core/services/scope_resolver.py`
-- [ ] T011 Create storage models for replay, evaluation, provenance, signal governance, and scope entities in `backend/src/edu_cs_core/storage/models.py`
-- [ ] T012 Create SQLite bootstrap and schema initialization flow in `backend/src/edu_cs_core/storage/bootstrap.py`
-- [ ] T013 Create FastAPI app factory, middleware, and dependency wiring in `backend/src/edu_cs_core/api/app.py`
-- [ ] T014 Create Typer CLI root entrypoint in `backend/src/edu_cs_core/cli/main.py`
+- [X] T006 Implement SQLite engine, session factory, and repository base in `backend/src/edu_cs_core/storage/database.py`
+- [X] T007 [P] Implement shared domain enums and value objects for signals, attribution, and scopes in `backend/src/edu_cs_core/domain/enums.py`
+- [X] T008 [P] Implement baseline configuration schema and loader in `backend/src/edu_cs_core/config/schema.py` and `backend/src/edu_cs_core/config/loader.py`
+- [X] T009 [P] Implement protocol registry and normalization entrypoints in `backend/src/edu_cs_core/protocol/registry.py`
+- [X] T010 [P] Implement scope resolution core with role-template and grant-aware visibility rules in `backend/src/edu_cs_core/services/scope_resolver.py`
+- [X] T011 Create storage models for replay, evaluation, provenance, signal governance, and scope entities in `backend/src/edu_cs_core/storage/models.py`
+- [X] T012 Create SQLite bootstrap and schema initialization flow in `backend/src/edu_cs_core/storage/bootstrap.py`
+- [X] T013 Create FastAPI app factory, middleware, and dependency wiring in `backend/src/edu_cs_core/api/app.py`
+- [X] T014 Create Typer CLI root entrypoint in `backend/src/edu_cs_core/cli/main.py`
 
 **Checkpoint**: Foundation ready - user story work can proceed.
 
@@ -56,21 +56,21 @@
 
 > **NOTE**: Write these tests first, verify they fail, then implement the story.
 
-- [ ] T015 [P] [US1] Add CLI contract test for replay submission and summary output in `backend/tests/contract/test_cli_replay_run.py`
-- [ ] T016 [P] [US1] Add API contract test for replay create/show/timeline endpoints in `backend/tests/contract/test_api_replays.py`
-- [ ] T017 [P] [US1] Add integration test for replay processing and persistence flow in `backend/tests/integration/test_replay_pipeline.py`
-- [ ] T018 [P] [US1] Add golden replay regression test and fixture in `backend/tests/regression/test_replay_golden_samples.py` and `backend/tests/fixtures/replay_session.json`
+- [X] T015 [P] [US1] Add CLI contract test for replay submission and summary output in `backend/tests/contract/test_cli_replay_run.py`
+- [X] T016 [P] [US1] Add API contract test for replay create/show/timeline endpoints in `backend/tests/contract/test_api_replays.py`
+- [X] T017 [P] [US1] Add integration test for replay processing and persistence flow in `backend/tests/integration/test_replay_pipeline.py`
+- [X] T018 [P] [US1] Add golden replay regression test and fixture in `backend/tests/regression/test_replay_golden_samples.py` and `backend/tests/fixtures/replay_session.json`
 
 ### Implementation for User Story 1
 
-- [ ] T019 [P] [US1] Implement replay protocol schemas and normalized output models in `backend/src/edu_cs_core/protocol/schemas.py`
-- [ ] T020 [P] [US1] Implement replay session and conversation event repositories in `backend/src/edu_cs_core/storage/repositories/replay_repository.py`
-- [ ] T021 [P] [US1] Implement evaluation and attribution repositories in `backend/src/edu_cs_core/storage/repositories/evaluation_repository.py`
-- [ ] T022 [US1] Implement replay ordering and normalization service in `backend/src/edu_cs_core/replay/normalizer.py`
-- [ ] T023 [US1] Implement replay processing service that emits structured results and provenance in `backend/src/edu_cs_core/services/replay_processor.py`
-- [ ] T024 [US1] Implement replay CLI commands in `backend/src/edu_cs_core/cli/replay.py`
-- [ ] T025 [US1] Implement replay create/show API routes in `backend/src/edu_cs_core/api/routes/replays.py`
-- [ ] T026 [US1] Implement replay timeline API route and serialization in `backend/src/edu_cs_core/api/routes/replay_timeline.py` and `backend/src/edu_cs_core/api/serializers/replay.py`
+- [X] T019 [P] [US1] Implement replay protocol schemas and normalized output models in `backend/src/edu_cs_core/protocol/schemas.py`
+- [X] T020 [P] [US1] Implement replay session and conversation event repositories in `backend/src/edu_cs_core/storage/repositories/replay_repository.py`
+- [X] T021 [P] [US1] Implement evaluation and attribution repositories in `backend/src/edu_cs_core/storage/repositories/evaluation_repository.py`
+- [X] T022 [US1] Implement replay ordering and normalization service in `backend/src/edu_cs_core/replay/normalizer.py`
+- [X] T023 [US1] Implement replay processing service that emits structured results and provenance in `backend/src/edu_cs_core/services/replay_processor.py`
+- [X] T024 [US1] Implement replay CLI commands in `backend/src/edu_cs_core/cli/replay.py`
+- [X] T025 [US1] Implement replay create/show API routes in `backend/src/edu_cs_core/api/routes/replays.py`
+- [X] T026 [US1] Implement replay timeline API route and serialization in `backend/src/edu_cs_core/api/routes/replay_timeline.py` and `backend/src/edu_cs_core/api/serializers/replay.py`
 
 **Checkpoint**: User Story 1 should now be fully functional and independently testable.
 
@@ -86,18 +86,18 @@
 
 > **NOTE**: Write these tests first, verify they fail, then implement the story.
 
-- [ ] T027 [P] [US2] Add contract test for governed signal snapshot fields in replay outputs in `backend/tests/contract/test_replay_signal_snapshots.py`
-- [ ] T028 [P] [US2] Add integration test for signal lifecycle event approval and profile synchronization in `backend/tests/integration/test_signal_governance.py`
+- [X] T027 [P] [US2] Add contract test for governed signal snapshot fields in replay outputs in `backend/tests/contract/test_replay_signal_snapshots.py`
+- [X] T028 [P] [US2] Add integration test for signal lifecycle event approval and profile synchronization in `backend/tests/integration/test_signal_governance.py`
 
 ### Implementation for User Story 2
 
-- [ ] T029 [P] [US2] Implement signal profile and lifecycle event repositories in `backend/src/edu_cs_core/storage/repositories/signal_repository.py`
-- [ ] T030 [P] [US2] Implement governed signal schemas and snapshot mappers in `backend/src/edu_cs_core/governance/schemas.py`
-- [ ] T031 [US2] Implement signal production and consumption policy resolver in `backend/src/edu_cs_core/governance/policy_resolver.py`
-- [ ] T032 [US2] Implement governed signal snapshot persistence service in `backend/src/edu_cs_core/services/signal_snapshot_service.py`
-- [ ] T033 [US2] Implement signal lifecycle governance service with minor/major approval rules in `backend/src/edu_cs_core/governance/lifecycle_service.py`
-- [ ] T034 [US2] Implement signal governance CLI commands in `backend/src/edu_cs_core/cli/signals.py`
-- [ ] T035 [US2] Implement signal governance API routes in `backend/src/edu_cs_core/api/routes/signals.py`
+- [X] T029 [P] [US2] Implement signal profile and lifecycle event repositories in `backend/src/edu_cs_core/storage/repositories/signal_repository.py`
+- [X] T030 [P] [US2] Implement governed signal schemas and snapshot mappers in `backend/src/edu_cs_core/governance/schemas.py`
+- [X] T031 [US2] Implement signal production and consumption policy resolver in `backend/src/edu_cs_core/governance/policy_resolver.py`
+- [X] T032 [US2] Implement governed signal snapshot persistence service in `backend/src/edu_cs_core/services/signal_snapshot_service.py`
+- [X] T033 [US2] Implement signal lifecycle governance service with minor/major approval rules in `backend/src/edu_cs_core/governance/lifecycle_service.py`
+- [X] T034 [US2] Implement signal governance CLI commands in `backend/src/edu_cs_core/cli/signals.py`
+- [X] T035 [US2] Implement signal governance API routes in `backend/src/edu_cs_core/api/routes/signals.py`
 
 **Checkpoint**: User Story 2 should now support independent signal production, snapshot traceability, and governance auditability.
 
@@ -113,17 +113,17 @@
 
 > **NOTE**: Write these tests first, verify they fail, then implement the story.
 
-- [ ] T036 [P] [US3] Add smoke test for replay review timeline and provenance display in `frontend/tests/smoke/replay_review.spec.ts`
-- [ ] T037 [P] [US3] Add smoke test for scoped aggregate review views in `frontend/tests/smoke/review_aggregates.spec.ts`
+- [X] T036 [P] [US3] Add smoke test for replay review timeline and provenance display in `frontend/tests/smoke/replay_review.spec.ts`
+- [X] T037 [P] [US3] Add smoke test for scoped aggregate review views in `frontend/tests/smoke/review_aggregates.spec.ts`
 
 ### Implementation for User Story 3
 
-- [ ] T038 [P] [US3] Implement console app shell and routing in `frontend/src/App.tsx`
-- [ ] T039 [P] [US3] Implement replay session and timeline API client in `frontend/src/services/replays.ts`
-- [ ] T040 [P] [US3] Implement scope-aware review state store in `frontend/src/state/reviewScope.ts`
-- [ ] T041 [US3] Build replay review page with timeline and provenance sections in `frontend/src/pages/ReplayReviewPage.tsx`
-- [ ] T042 [US3] Build review dashboard page for scoped aggregate views in `frontend/src/pages/ReviewDashboardPage.tsx`
-- [ ] T043 [US3] Build signal and anomaly display widgets in `frontend/src/components/SignalPanel.tsx`
+- [X] T038 [P] [US3] Implement console app shell and routing in `frontend/src/App.tsx`
+- [X] T039 [P] [US3] Implement replay session and timeline API client in `frontend/src/services/replays.ts`
+- [X] T040 [P] [US3] Implement scope-aware review state store in `frontend/src/state/reviewScope.ts`
+- [X] T041 [US3] Build replay review page with timeline and provenance sections in `frontend/src/pages/ReplayReviewPage.tsx`
+- [X] T042 [US3] Build review dashboard page for scoped aggregate views in `frontend/src/pages/ReviewDashboardPage.tsx`
+- [X] T043 [US3] Build signal and anomaly display widgets in `frontend/src/components/SignalPanel.tsx`
 
 **Checkpoint**: User Story 3 should now provide a lightweight, validation-focused review console.
 
@@ -139,20 +139,20 @@
 
 > **NOTE**: Write these tests first, verify they fail, then implement the story.
 
-- [ ] T044 [P] [US4] Add CLI contract test for config validate and diff commands in `backend/tests/contract/test_cli_config.py`
-- [ ] T045 [P] [US4] Add API contract test for scoped replay and aggregate authorization in `backend/tests/contract/test_api_scope_enforcement.py`
-- [ ] T046 [P] [US4] Add integration test for explicit grants and read-only auditor behavior in `backend/tests/integration/test_scope_grants.py`
+- [X] T044 [P] [US4] Add CLI contract test for config validate and diff commands in `backend/tests/contract/test_cli_config.py`
+- [X] T045 [P] [US4] Add API contract test for scoped replay and aggregate authorization in `backend/tests/contract/test_api_scope_enforcement.py`
+- [X] T046 [P] [US4] Add integration test for explicit grants and read-only auditor behavior in `backend/tests/integration/test_scope_grants.py`
 
 ### Implementation for User Story 4
 
-- [ ] T047 [P] [US4] Implement baseline configuration repository and version manifest handling in `backend/src/edu_cs_core/storage/repositories/config_repository.py`
-- [ ] T048 [P] [US4] Implement configuration validation and diff services in `backend/src/edu_cs_core/config/service.py`
-- [ ] T049 [US4] Implement query-scope enforcement service for list, detail, and aggregate requests in `backend/src/edu_cs_core/services/query_scope_service.py`
-- [ ] T050 [US4] Implement aggregate review service over authorized datasets only in `backend/src/edu_cs_core/services/review_aggregate_service.py`
-- [ ] T051 [US4] Implement config validation and diff CLI commands in `backend/src/edu_cs_core/cli/config.py`
-- [ ] T052 [US4] Implement config management API routes in `backend/src/edu_cs_core/api/routes/config.py`
-- [ ] T053 [US4] Implement scoped aggregate review API routes with auditor read-only safeguards in `backend/src/edu_cs_core/api/routes/review.py`
-- [ ] T054 [US4] Seed default role templates and grant resolution helpers in `backend/src/edu_cs_core/storage/seed_role_templates.py`
+- [X] T047 [P] [US4] Implement baseline configuration repository and version manifest handling in `backend/src/edu_cs_core/storage/repositories/config_repository.py`
+- [X] T048 [P] [US4] Implement configuration validation and diff services in `backend/src/edu_cs_core/config/service.py`
+- [X] T049 [US4] Implement query-scope enforcement service for list, detail, and aggregate requests in `backend/src/edu_cs_core/services/query_scope_service.py`
+- [X] T050 [US4] Implement aggregate review service over authorized datasets only in `backend/src/edu_cs_core/services/review_aggregate_service.py`
+- [X] T051 [US4] Implement config validation and diff CLI commands in `backend/src/edu_cs_core/cli/config.py`
+- [X] T052 [US4] Implement config management API routes in `backend/src/edu_cs_core/api/routes/config.py`
+- [X] T053 [US4] Implement scoped aggregate review API routes with auditor read-only safeguards in `backend/src/edu_cs_core/api/routes/review.py`
+- [X] T054 [US4] Seed default role templates and grant resolution helpers in `backend/src/edu_cs_core/storage/seed_role_templates.py`
 
 **Checkpoint**: User Story 4 should now enforce baseline configuration governance and minimum tenant isolation.
 
@@ -162,9 +162,9 @@
 
 **Purpose**: Finish cross-story quality work, tighten docs, and run the approved validation flow.
 
-- [ ] T055 [P] Update implementation notes and developer instructions in `backend/README.md` and `frontend/README.md`
-- [ ] T056 [P] Add cross-cutting observability and structured logging for replay, governance, and review flows in `backend/src/edu_cs_core/services/logging.py`
-- [ ] T057 Run the full quickstart validation flow and update any execution notes in `specs/001-edu-cs-core/quickstart.md`
+- [X] T055 [P] Update implementation notes and developer instructions in `backend/README.md` and `frontend/README.md`
+- [X] T056 [P] Add cross-cutting observability and structured logging for replay, governance, and review flows in `backend/src/edu_cs_core/services/logging.py`
+- [X] T057 Run the full quickstart validation flow and update any execution notes in `specs/001-edu-cs-core/quickstart.md`
 
 ---
 

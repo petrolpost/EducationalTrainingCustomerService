@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "session": {
+    "session_id": "replay-001",
+    "tenant_id": "tenant-a",
+    "school_id": "school-01",
+    "source_kind": "simulated"
+  },
+  "events": [
+    {
+      "event_id": "evt-001",
+      "seq": 1,
+      "occurred_at": "2026-08-12T12:00:00Z",
+      "event_type": "message",
+      "actor_kind": "customer",
+      "actor_id": "cust-001",
+      "content": "我今天想请假，但是不知道规则。",
+      "channel": "simulator",
+      "metadata": {},
+      "extensions": {}
+    }
+  ]
+}

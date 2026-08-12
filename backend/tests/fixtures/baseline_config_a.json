@@ -1,0 +1,16 @@
+{
+  "config_version": "0.1.0",
+  "spec_version": "001-edu-cs-core",
+  "route_defaults": {
+    "default_label": "in_service.general_support"
+  },
+  "signal_policies": {
+    "attention_shift": {
+      "default_consumption_tier": "observe",
+      "lifecycle_state": "experimental"
+    }
+  },
+  "scope_defaults": {
+    "platform_auditor_requires_explicit_grant": true
+  }
+}
