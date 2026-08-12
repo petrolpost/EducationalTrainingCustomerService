@@ -45,3 +45,6 @@ temp/
 .github
 .specify
 
+*.egg-info/
+
+backend/.data/
